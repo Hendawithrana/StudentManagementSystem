@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'StudentManagement.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU3R1ZGVudE1hbmFnZW1lbnQuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+U3R1ZGVudE1hbmFnZW1lbnQ8L3RpdGxlPg0KICAgIDx2ZW5kb3I+VVNFUjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJTdHVkZW50TWFuYWdlbWVudC5qYXIiIHNpemU9IjU4Nzc5NjEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxjb20ubG93YWdpZS50ZXh0LTIuMS43LmphciIgc2l6ZT0iMTc4MjM3NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGNvbW1vbnMtYmVhbnV0aWxzLTEuOC4zLmphciIgc2l6ZT0iMjMyMDE5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcY29tbW9ucy1kaWdlc3Rlci0yLjEuamFyIiBzaXplPSIxOTY3NjgiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxpdGV4dC0yLjEuNy1zcmMuamFyIiBzaXplPSIxNDY3NzUzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcaXRleHRwZGYtNS4zLjQuamFyIiBzaXplPSIxODEwMDM4IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamFzcGVycmVwb3J0cy02LjQuMy5qYXIiIHNpemU9IjU0ODcwNDQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxqYXNwZXJyZXBvcnRzLWZvbnRzLTYuNC4zLmphciIgc2l6ZT0iMjQ3ODA3NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphc3BlcnJlcG9ydHMtamF2YWZsb3ctNi40LjMuamFyIiBzaXplPSI1NTUyNDc2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamNvbW1vbi0xLjAuOC5qYXIiIHNpemU9IjMxMDg5MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGpmb2VuaXguamFyIiBzaXplPSIyNDAxNTk0IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamZyZWVjaGFydC0xLjAuMTMuamFyIiBzaXplPSIxNDI1NzQyIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtNS4xLjIzLWJpbi5qYXIiIHNpemU9IjgzNDEyNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG15c3FsLWNvbm5lY3Rvci1qYXZhLTUuMS42LWJpbi5qYXIiIHNpemU9IjcwMzI2NSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy1hcGFjaGUtY29tbW9ucy1sb2dnaW5nLmphciIgc2l6ZT0iNjA3ODYiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuYXBhY2hlLmNvbW1vbnMuY29sbGVjdGlvbnMuamFyIiBzaXplPSI1NzEyNTkiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iU3R1ZGVudE1hbmFnZW1lbnQiID4NCiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+DQogIDwvYXBwbGV0LWRlc2M+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJsay5panNlLlN0dWRlbnRNYW5hZ2VtZW50Lk1haW4uTWFpbiIgIG5hbWU9IlN0dWRlbnRNYW5hZ2VtZW50IiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedlk.ijse.StudentManagement.Main() {
+        dtjava.embed(
+            {
+                id : 'lk.ijse.StudentManagement.Main',
+                url : 'StudentManagement.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU3R1ZGVudE1hbmFnZW1lbnQuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+U3R1ZGVudE1hbmFnZW1lbnQ8L3RpdGxlPg0KICAgIDx2ZW5kb3I+VVNFUjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJTdHVkZW50TWFuYWdlbWVudC5qYXIiIHNpemU9IjU4Nzc5NjEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxjb20ubG93YWdpZS50ZXh0LTIuMS43LmphciIgc2l6ZT0iMTc4MjM3NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGNvbW1vbnMtYmVhbnV0aWxzLTEuOC4zLmphciIgc2l6ZT0iMjMyMDE5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcY29tbW9ucy1kaWdlc3Rlci0yLjEuamFyIiBzaXplPSIxOTY3NjgiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxpdGV4dC0yLjEuNy1zcmMuamFyIiBzaXplPSIxNDY3NzUzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcaXRleHRwZGYtNS4zLjQuamFyIiBzaXplPSIxODEwMDM4IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamFzcGVycmVwb3J0cy02LjQuMy5qYXIiIHNpemU9IjU0ODcwNDQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxqYXNwZXJyZXBvcnRzLWZvbnRzLTYuNC4zLmphciIgc2l6ZT0iMjQ3ODA3NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphc3BlcnJlcG9ydHMtamF2YWZsb3ctNi40LjMuamFyIiBzaXplPSI1NTUyNDc2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamNvbW1vbi0xLjAuOC5qYXIiIHNpemU9IjMxMDg5MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGpmb2VuaXguamFyIiBzaXplPSIyNDAxNTk0IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamZyZWVjaGFydC0xLjAuMTMuamFyIiBzaXplPSIxNDI1NzQyIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtNS4xLjIzLWJpbi5qYXIiIHNpemU9IjgzNDEyNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG15c3FsLWNvbm5lY3Rvci1qYXZhLTUuMS42LWJpbi5qYXIiIHNpemU9IjcwMzI2NSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy1hcGFjaGUtY29tbW9ucy1sb2dnaW5nLmphciIgc2l6ZT0iNjA3ODYiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuYXBhY2hlLmNvbW1vbnMuY29sbGVjdGlvbnMuamFyIiBzaXplPSI1NzEyNTkiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iU3R1ZGVudE1hbmFnZW1lbnQiID4NCiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+DQogIDwvYXBwbGV0LWRlc2M+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJsay5panNlLlN0dWRlbnRNYW5hZ2VtZW50Lk1haW4uTWFpbiIgIG5hbWU9IlN0dWRlbnRNYW5hZ2VtZW50IiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedlk.ijse.StudentManagement.Main);
+</script>
+
+</head><body>
+<h2>Test page for <b>StudentManagement</b></h2>
+  <b>Webstart:</b> <a href='StudentManagement.jnlp' onclick="return launchApplication('StudentManagement.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

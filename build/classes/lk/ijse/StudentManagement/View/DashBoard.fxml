@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1169.0" style="-fx-background-color: #212F3D;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.StudentManagement.Controller.DashBoardController">
+   <children>
+      <AnchorPane layoutY="117.0" prefHeight="562.0" prefWidth="223.0" style="-fx-background-color: #154360;">
+         <children>
+            <JFXButton fx:id="AddNewStudentBtn" layoutX="21.0" layoutY="49.0" onMouseClicked="#loadNewStudent" onMouseEntered="#enterNewStudent" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Add New Student" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="ManageStudentBtn" layoutX="23.0" layoutY="90.0" onMouseClicked="#loadManageStudent" onMouseEntered="#enterManageStudent" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Manage Student" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="AddNewBatchBtn" layoutX="24.0" layoutY="172.0" onMouseClicked="#loadAddNewBatch" onMouseEntered="#enterNewBatch" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Add New Batch" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="AddNewCourseBtn" layoutX="24.0" layoutY="214.0" onMouseClicked="#loadAddNewCourse" onMouseEntered="#enterNewCourse" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Add New Course" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="dashBordBtn" layoutX="21.0" layoutY="8.0" onMouseClicked="#loadDashBoardLoad" onMouseEntered="#enterDashBoard" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="DsahBoard" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="CourseMangeDetailsBtn" layoutX="24.0" layoutY="255.0" onMouseClicked="#loadCourseMangeDetails" onMouseEntered="#enterCourseMangeDetails" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Course Manage Details" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="MakePaymentBtn" layoutX="24.0" layoutY="384.0" onMouseClicked="#loadPayments" onMouseEntered="#enterPayments" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Make Payments" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="reportsBtn" layoutX="24.0" layoutY="426.0" onMouseClicked="#loadReports" onMouseEntered="#enterRepots" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="View Reports" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="AccountSettingBtn" layoutX="24.0" layoutY="469.0" onMouseClicked="#loadAccountSettings" onMouseEntered="#enterAccountSetting" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Account Settings" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="logOutBtn" layoutX="24.0" layoutY="514.0" onMouseClicked="#loadLogin" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: black;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="AddBatchDetailsBtn" layoutX="24.0" layoutY="131.0" onMouseClicked="#loadBatchDetails" onMouseEntered="#enterAddBatchDetails" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Add Batch Details" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="ExamBtn" layoutX="24.0" layoutY="297.0" onMouseClicked="#loadExam" onMouseEntered="#enterExam" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: black;" text="Exam" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ResultBtn" layoutX="24.0" layoutY="340.0" onMouseClicked="#loadResult" onMouseEntered="#enterResult" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: black;" text="Result" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane" layoutX="224.0" layoutY="117.0" prefHeight="562.0" prefWidth="950.0" />
+      <ImageView fitHeight="100.0" fitWidth="417.0" layoutX="446.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/nenasala%20logo2%20png.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dateLbl" layoutX="240.0" layoutY="23.0" prefHeight="80.0" prefWidth="188.0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="mimimizeImg" fitHeight="48.0" fitWidth="76.0" layoutX="1039.0" layoutY="13.0" onMouseClicked="#onMinimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Minus_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cancelImg" fitHeight="48.0" fitWidth="48.0" layoutX="1108.0" layoutY="13.0" onMouseClicked="#onClose" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Cancel_96px.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="time" layoutX="828.0" layoutY="27.0" prefHeight="80.0" prefWidth="169.0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="137.0" fitWidth="223.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/17b8c9_2f2114f7f72f4850af700f6952e941dc-mv2.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

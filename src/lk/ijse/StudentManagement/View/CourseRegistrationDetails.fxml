@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="744.0" style="-fx-background-color: LIGHTGREY;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutX="14.0" layoutY="236.0" prefHeight="26.0" prefWidth="723.0" />
+      <Label layoutX="38.0" layoutY="25.0" prefHeight="26.0" prefWidth="115.0" text="Course Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="266.0" prefHeight="38.0" prefWidth="127.0" text="Lecturer Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="60.0" layoutY="59.0" prefHeight="158.0" prefWidth="557.0">
+        <columns>
+          <TableColumn prefWidth="112.0" text="Course ID" />
+          <TableColumn prefWidth="194.0" text="Course Name" />
+            <TableColumn prefWidth="131.0" text="Duration" />
+            <TableColumn minWidth="0.0" prefWidth="119.0" text="Course Fee" />
+        </columns>
+      </TableView>
+      <TableView layoutX="38.0" layoutY="328.0" prefHeight="158.0" prefWidth="259.0">
+        <columns>
+          <TableColumn prefWidth="71.0" text="Lecture ID" />
+          <TableColumn prefWidth="186.0" text="Lecturer Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="346.0" layoutY="272.0" prefHeight="26.0" prefWidth="127.0" text="Exam Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="346.0" layoutY="324.0" prefHeight="166.0" prefWidth="374.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Exam ID" />
+          <TableColumn prefWidth="75.0" text="Exam Name" />
+            <TableColumn prefWidth="75.0" text="Exam Date" />
+            <TableColumn prefWidth="75.0" text="Start Time" />
+            <TableColumn prefWidth="75.0" text="End Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

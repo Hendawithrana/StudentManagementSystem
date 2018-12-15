@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.StudentManagement.Controller.AddNewBatchController">
+   <children>
+      <JFXTextField fx:id="batchIDtxt" editable="false" labelFloat="true" layoutX="200.0" layoutY="151.0" onAction="#batchAction" prefHeight="31.0" prefWidth="127.0" promptText="Batch ID">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="batchNoTxt" labelFloat="true" layoutX="200.0" layoutY="222.0" onAction="#batchNoAction" prefHeight="31.0" prefWidth="127.0" promptText="Btach No">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="timeTxt" labelFloat="true" layoutX="200.0" layoutY="311.0" onAction="#timeAction" prefHeight="31.0" prefWidth="220.0" promptText="Time">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <ImageView fitHeight="329.0" fitWidth="317.0" layoutX="631.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/dot-background-png-23.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="submitBtn" layoutX="565.0" layoutY="450.0" onMouseClicked="#addBatch" prefHeight="59.0" prefWidth="113.0" style="-fx-background-color: #145A32;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="cancelBtn" layoutX="711.0" layoutY="450.0" onMouseClicked="#cancelBatch" prefHeight="59.0" prefWidth="113.0" style="-fx-background-color: #922B21;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label alignment="CENTER" layoutX="349.0" layoutY="24.0" prefHeight="53.0" prefWidth="177.0" text="Add New Batch">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="dayTxt" labelFloat="true" layoutX="562.0" layoutY="222.0" prefHeight="31.0" prefWidth="205.0" promptText="Day">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <ImageView fitHeight="87.0" fitWidth="127.0" layoutX="229.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Add_User_Group_Man_Man_100px.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="comboCoursID" labelFloat="true" layoutX="550.0" layoutY="148.0" prefHeight="31.0" prefWidth="162.0" promptText="Course ID" />
+   </children>
+</AnchorPane>

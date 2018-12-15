@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Course" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d72dd375-0fdd-46c6-81de-88104a123c90">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="studentManagement"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from course]]>
+	</queryString>
+	<field name="cid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="course"/>
+	</field>
+	<field name="course_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="course_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="course"/>
+	</field>
+	<field name="duration" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="duration"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="course"/>
+	</field>
+	<field name="fee" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="fee"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="course"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="10" width="220" height="44" uuid="6b54f52e-c30f-4595-a102-8d2e82d30851"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Course Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" uuid="ed968c8c-51ee-463d-a24b-5d471813d474">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13fc01e4-e224-47ee-b76e-dac236caed92"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[cid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="39c7d429-3f6d-4835-9366-4088a07d9c8a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="885fa59a-0283-4d42-8c12-cc01a5d25446"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[course_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="86a09554-2e59-477c-bb55-9a7f2b870202">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd07cb65-e679-4896-b52e-6548050419e0"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[duration]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="3ced92b7-7589-4b7c-95d0-691bb660e045">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92320677-3138-4e1a-b841-0c5ee4a721c7"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[fee]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="d6e3b027-b69b-4519-ba10-b9b7480515e5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13fc01e4-e224-47ee-b76e-dac236caed92"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="812fb56a-39d4-4754-b77d-beb21c045ac6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="885fa59a-0283-4d42-8c12-cc01a5d25446"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{course_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="da529ae8-06bd-40ea-98c0-298e01fab4e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd07cb65-e679-4896-b52e-6548050419e0"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{duration}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="e082704f-3768-4e92-ad49-f693af49a5a1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92320677-3138-4e1a-b841-0c5ee4a721c7"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

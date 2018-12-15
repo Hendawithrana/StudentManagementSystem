@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="949.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.StudentManagement.Controller.ReportsController">
+   <children>
+      <Label alignment="CENTER" layoutX="315.0" layoutY="24.0" prefHeight="52.0" prefWidth="223.0" text="Reports">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="534.0" fitWidth="949.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/blue-2384333_960_720.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="slistBtn" layoutX="62.0" layoutY="110.0" onMouseClicked="#loadStudentReport" prefHeight="95.0" prefWidth="161.0" style="-fx-background-color: #E74C3C;" text="Student List">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="reBtn" layoutX="279.0" layoutY="110.0" onMouseClicked="#loadResult" prefHeight="95.0" prefWidth="161.0" style="-fx-background-color: #E74C3C;" text="Result List">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BtnExam" layoutX="496.0" layoutY="110.0" onMouseClicked="#loadExam" prefHeight="95.0" prefWidth="161.0" style="-fx-background-color: #E74C3C;" text="Exam">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="lectureBtn" layoutX="715.0" layoutY="110.0" onMouseClicked="#loadLecture" prefHeight="95.0" prefWidth="161.0" style="-fx-background-color: #E74C3C;" text="Courses">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

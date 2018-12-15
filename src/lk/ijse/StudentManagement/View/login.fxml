@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="732.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.StudentManagement.Controller.LogInController">
+   <children>
+      <ImageView fitHeight="548.0" fitWidth="793.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logoImg" fitHeight="150.0" fitWidth="414.0" layoutX="192.0" layoutY="14.0" onMouseEntered="#mouseEnter" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/nenasala%20logo2%20png.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" focusColor="#1316da" labelFloat="true" layoutX="209.0" layoutY="245.0" onAction="#getPassword" opacity="0.7" prefHeight="43.0" prefWidth="290.0" promptText="User Name" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#1033dd" labelFloat="true" layoutX="209.0" layoutY="326.0" opacity="0.7" prefHeight="44.0" prefWidth="290.0" promptText="Password" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="LogBtn" layoutX="441.0" layoutY="427.0" onMouseClicked="#loadDashBoard" onMouseEntered="#mouseEnter" prefHeight="44.0" prefWidth="117.0" style="-fx-background-color: #145A32;" text="Log In" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cancelBtn" layoutX="583.0" layoutY="427.0" onMouseClicked="#cancelAll" prefHeight="44.0" prefWidth="117.0" style="-fx-background-color: #922B21;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.StudentManagement.Controller.DashBoardLoadController">
+   <children>
+      <Label layoutX="40.0" layoutY="22.0" prefHeight="29.0" prefWidth="108.0" text="Course Details">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="cTbl" layoutX="48.0" layoutY="60.0" prefHeight="178.0" prefWidth="579.0">
+        <columns>
+          <TableColumn prefWidth="97.0" text="Course ID" />
+          <TableColumn prefWidth="198.0" text="Course Name" />
+            <TableColumn prefWidth="165.0" text="Duration" />
+            <TableColumn prefWidth="117.0" text="Course Fee" />
+        </columns>
+      </TableView>
+      <Separator layoutX="14.0" layoutY="255.0" prefHeight="16.0" prefWidth="707.0" />
+      <Label layoutX="40.0" layoutY="287.0" prefHeight="29.0" prefWidth="108.0" text="Subject Detail">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="lTbl" layoutX="25.0" layoutY="343.0" prefHeight="178.0" prefWidth="264.0">
+        <columns>
+          <TableColumn prefWidth="74.0" text="Subject ID" />
+          <TableColumn prefWidth="189.0" text="Subject Name" />
+        </columns>
+      </TableView>
+      <TableView fx:id="eTbl" layoutX="320.0" layoutY="343.0" prefHeight="178.0" prefWidth="377.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Exam ID" />
+          <TableColumn prefWidth="75.0" text="Exam Name" />
+            <TableColumn prefWidth="75.0" text="Exam Date" />
+            <TableColumn prefWidth="75.0" text="Start Time" />
+            <TableColumn prefWidth="75.0" text="End Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="320.0" layoutY="284.0" prefHeight="29.0" prefWidth="108.0" text="Exam Details">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="563.0" fitWidth="948.0" layoutY="15.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/video-poster-small.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
